@@ -1,3 +1,14 @@
-.footer, .footer a{
+.footer-item, .footer-item a{
     color:#fff;
+    padding-top: 10px;
+
+}
+.container-footer{
+    line-height: 1;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }

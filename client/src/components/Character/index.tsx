@@ -66,11 +66,11 @@ function Character() {
                     </section>
                 )
             }
-            { data.especies?.length > 0 &&
+            { data.species.length > 0 &&
             (
                 <section><strong>Species</strong>
                     <ul>
-                        {data.especies.map(( specie : any, index: any) => {
+                        {data.species.map(( specie : any, index: any) => {
                             return (
                                 <li  key={ index } >
                                     { specie.name && <strong>Name: </strong> } {specie?.name}

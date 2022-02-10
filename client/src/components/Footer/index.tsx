@@ -8,13 +8,13 @@ function Footer() {
   return (
     <>
         
-            <div className="container">
-                <span className="footer">
+            <div className="container-footer">
+                <div className="footer-item">
                     <Link to="/info">More info about the project</Link> 
-                </span> <br />
-                <span className="footer">
+                </div> 
+                <div className="footer-item">
                     <a href="https://toledocarlos.com">Carlos Toledo</a> and <a href="https://www.redspace.com/">Red space</a> colaboration  © {year}
-                </span>
+                </div>
             </div>
         
         

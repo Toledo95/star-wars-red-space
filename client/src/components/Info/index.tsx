@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './styles.css';
 
 function Info() {
+  const [audio] = useState(new Audio('/StarWars.mp3'));
+  useEffect(() => {
+    audio.play();
+    return () => {
+      audio.pause();
+      }
+  },[audio]);
   return (
     <div className="main-info">
         <div className="fade"></div>
