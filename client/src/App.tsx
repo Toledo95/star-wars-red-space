@@ -5,7 +5,8 @@ import Home from './components/Home';
 import Character from './components/Character';
 import NotFound from './components/NotFound';
 import Info from './components/Info';
-
+const BASE_URL = process.env.REACT_APP_BASE_URL || '';
+console.log(BASE_URL);
 function App() {
   return (
     <div className="App">

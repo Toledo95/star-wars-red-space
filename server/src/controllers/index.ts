@@ -8,15 +8,6 @@ export const index = async (_: Request, res: Response): Promise<void> => {
     });
 };
 
-export const getAll = async (_: Request, res: Response): Promise<void> => {
-    swapi.people().then((result:any) => {
-        res.send({
-            "test": "It works!",
-            "response":result,
-        });
-    });
-    
-};
 
 export const getCharacter = async (_: Request, res: Response): Promise<void> => {
     try{

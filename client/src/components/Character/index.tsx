@@ -6,6 +6,7 @@ import Footer from '../Footer';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './styles.css';
+const BASE_URL = process.env.REACT_APP_BASE_URL || '';
 
 function Character() {
     const [data, setData] = useState<any>({});
@@ -15,7 +16,7 @@ function Character() {
     useEffect(() => {
         setError(false);
         setLoading(true);
-        axios.get(`http://localhost:3000/api/star-wars/${id}`)
+        axios.get(`${BASE_URL}/api/star-wars/${id}`)
         .then(function (response) {
             setData(response.data);
             setLoading(false);

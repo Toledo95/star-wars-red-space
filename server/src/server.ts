@@ -16,14 +16,16 @@ app.use(cors());
 app.use(express.json());
 app.use(response);
 
-//To serve react
+// Routes
+app.use("/api", router);
+
+//To serve client files
 app.use(express.static(path.join(__dirname, '../../client/build')));
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../../client/build', 'index.html'));
 });
 
-// Routes
-app.use("/api", router);
+
 
 // Events
 app.listen(port, onListening);
