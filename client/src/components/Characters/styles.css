@@ -44,6 +44,12 @@ div[id*="-wrapper"] {
     height: 220px;
     margin-top: 80px;
   }
+  @media (max-width: 600px) {
+    #yoda {
+      width: 320px;
+      height: 190px;
+    }
+  }
   #yoda:before {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
