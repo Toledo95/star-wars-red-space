@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+body {
+  -moz-animation: sky linear 6.75s infinite;
+  -webkit-animation: sky linear 6.75s infinite;
+  animation: sky linear 6.75s infinite;
+  background: #000 url("./assets/images/stars.png") repeat 0 0;
+  -moz-perspective: 400px;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0px 0px 0px 20px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+@-moz-keyframes sky {
+  to {
+    background-position: 0 240px;
+  }
+}
+@-webkit-keyframes sky {
+  to {
+    background-position: 0 240px;
+  }
+}
+@keyframes sky {
+  to {
+    background-position: 0 240px;
+  }
+}
+

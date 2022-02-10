@@ -12,10 +12,15 @@ const port = process.env.PORT || 3000;
 
 // Middlewares 
 app.use(logger("dev"));
-app.use(express.static(path.join(__dirname, "../public")));
 app.use(cors());
 app.use(express.json());
 app.use(response);
+
+//To serve react
+app.use(express.static(path.join(__dirname, '../../client/build')));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../client/build', 'index.html'));
+});
 
 // Routes
 app.use("/api", router);
