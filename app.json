@@ -1,0 +1,21 @@
+{
+    "name": "star-wars-red-space",
+    "description": "TODO",
+    "scripts": {
+    },
+    "env": {
+    },
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [
+  
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
